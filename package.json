@@ -1,0 +1,18 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "Simple es6 boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "watch": "babel --no-babelrc src/index.js --watch --out-file dist/bundle.js --presets=@babel/preset-env",
+    "livereload": "browser-sync start --server --files \"*.html, dist/*.js\""
+  },
+  "author": "@crapu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "browser-sync": "^2.26.12"
+  }
+}
